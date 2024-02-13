@@ -69,9 +69,15 @@ const AboutApp = () => {
           </p>
           <SkillList />
         </div>
+        <div className="flex-auto justify-center">
+          <p className="font-bold">Feel free to use it, no copyright!</p>
+          <a href="/" className="font-semibold underline">
+            Checkout the code on Github
+          </a>
+        </div>
       </div>
       <div className="m-4 flex-1  sm:border-l-4 sm:border-yellow-400">
-        <h4 className="my-8 text-center text-xl font-semibold text-stone-900 md:text-3xl">
+        <h4 className="mb-4 text-center text-xl font-semibold text-stone-900 md:text-3xl">
           App Features
         </h4>
         <ul>
