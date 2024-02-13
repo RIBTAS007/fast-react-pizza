@@ -70,3 +70,26 @@ You can use npm create vite to start a project with vite.
 - Then we can call the createorder function and then we can use `redirect` to direct us to the order page.
 - we need to use `redirect` instead of useNavigate hook because we usenvaigate can only be called inside a component function.
 - useActionData() hook is used to get the data that is returned by the action.
+
+## Tailwind
+
+- we will be using tailwind to style our app
+
+## Redux toolkit
+
+- npm i @reduxjs/toolkit react-redux
+- ```javascript
+  decreaseItemQuantity(state, action) {
+      const item = state.cart.find((item) => item.pizzaId === action.payload);
+      item.quantity--;
+      item.totalprice = item.quantity * item.unitPrice;
+      if (item.quantity === 0) {
+        cartSlice.caseReducers.deleteItem(state, action);
+      }
+    },
+  ```
+- by doing this we can call one reducer function inside another reducer function.
+- we can aslo directly use store reducer like store.dispatch(clearCart()); but we should not overuse it.
+- redux by nature is synch, so in order to work with async code we can use thunks
+- thunks is a middleware that sits between the dispatching and the reducer itself.
+- in the PUT request we need to send the entire object, in the patch request we just need to send the data we want to update or add in the object.
