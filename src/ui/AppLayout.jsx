@@ -13,7 +13,7 @@ const AppLayout = () => {
       {isLoading && <Loader />}
       <Header />
       <div className="flex items-center justify-center bg-stone-800 py-2 text-sm font-semibold uppercase text-stone-200 sm:px-6 md:text-base">
-        <Link to="/aboutApp">App Details</Link>
+        <Link to="/fast-react-pizza/aboutApp">App Details</Link>
       </div>
 
       <div className="overflow-scroll">

@@ -9,7 +9,7 @@ const Header = () => {
       className=" border-b-300 font-pizza flex items-center 
     justify-around border border-stone-500 bg-yellow-500 px-4 py-3 uppercase sm:px-6"
     >
-      <Link to="/" className="tracking-widest">
+      <Link to="/fast-react-pizza/" className="tracking-widest">
         Fast React Pizza Co.
       </Link>
       <SearchOrder />
