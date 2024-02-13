@@ -52,14 +52,6 @@ function Order() {
         </div>
       </div>
 
-      <div className="space-y-2 bg-stone-200 px-6 py-5">
-        <p className="text-sm font-medium text-stone-600">Name: {customer}</p>
-        <p className="text-sm font-medium text-stone-600">Address: {address}</p>
-        <p className="text-stone-60 text-sm font-medium">
-          Contact Number: {phone}
-        </p>
-      </div>
-
       <div className="flex flex-wrap items-center justify-between gap-2 bg-stone-200 px-6 py-5">
         <p className="font-medium">
           {deliveryIn >= 0
